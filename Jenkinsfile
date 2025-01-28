@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_CREDENTIALS = '01baaf9e-a31f-4f29-8f80-623fb9ec5e92'
-        DOCKER_USER = 'jeridocker21'
-        DOCKER_PASS = 'jeri12345'
-        DOCKER_IMAGE_NAME_DEV = 'jeridocker21/dev:latest'
-        DOCKER_IMAGE_NAME_PROD = 'jeridocker21/prod:latest'
+        DOCKER_HUB_CREDENTIALS = 'dckr_pat_PUIqhGSMqi5_XSysVglaU9HSAIc'
+        DOCKER_USER = 'bala336'
+        DOCKER_PASS = 'Bala@4797'
+        DOCKER_IMAGE_NAME_DEV = 'bala336/dev:v1'
+        DOCKER_IMAGE_NAME_PROD = 'bala336/prod:v1'
     }
 
     stages {
@@ -20,10 +20,10 @@ pipeline {
                     echo "Checking out branch: ${branch}"
                     if (branch == "main") {
                         echo "Checked out 'main' branch"
-                        git branch: 'main', url: 'https://github.com/jerirajangam/Guvi-Devops-FinalProject.git'
+                        git branch: 'main', url: 'https://github.com/Krishna-336/Final-project.git'
                     } else {
                         echo "Checked out 'dev' branch"
-                        git branch: 'dev', url: 'https://github.com/jerirajangam/Guvi-Devops-FinalProject.git'
+                        git branch: 'dev', url: 'https://github.com/Krishna-336/Final-project.git'
                     }
                 }
             }
