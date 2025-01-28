@@ -33,6 +33,7 @@ pipeline {
             steps {
                 script {
                     echo "Building Docker image from the checked out branch"
+                    sh 'chmod +x build.sh'
                     
                     sh './build.sh'
                 }
@@ -67,6 +68,7 @@ pipeline {
             steps {
                 script {
                     echo "Deploying to the server"
+                    sh 'chmod +x deploy.sh'
                     
                     sh './deploy.sh'
                 }
