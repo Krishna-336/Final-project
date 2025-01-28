@@ -4,9 +4,9 @@ pipeline {
     environment {
         DOCKER_HUB_CREDENTIALS = 'dckr_pat_PUIqhGSMqi5_XSysVglaU9HSAIc'
         DOCKER_USER = 'bala336'
-        DOCKER_PASS = 'Bala@4797'
+        DOCKER_PASS = 'dckr_pat_PUIqhGSMqi5_XSysVglaU9HSAIc'
         DOCKER_IMAGE_NAME_DEV = 'bala336/dev:v1'
-        DOCKER_IMAGE_NAME_PROD = 'bala336/prod:v1'
+        DOCKER_IMAGE_NAME_PROD = 'bala336/prod:v2'
     }
 
     stages {
